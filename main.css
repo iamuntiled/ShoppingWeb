@@ -1,32 +1,58 @@
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+.container {
     overflow: hidden;
-    background-color: #00b2ff;
+    background-color: #15aced;
+    font-family: Arial;
 }
 
-li {
+.container a {
     float: left;
-}
-
-li a {
-    display: block;
+    font-size: 16px;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-    background-color: #189ed7;
+.dropdown {
+    float: left;
+    overflow: hidden;
 }
-#about{
-    float: right;
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
 }
-div{
-    position: fixed;
-    top: 50px;
-    width: 100%;
+
+.container a:hover, .dropdown:hover {
+    background-color: #1c9fd7;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
